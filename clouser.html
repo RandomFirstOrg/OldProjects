@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // with the help of recursion and function
+        function printCounting()
+         {
+             var userInput = prompt("Enter a number:");
+            var number = parseInt(userInput);
+
+             if (isNaN(number)) 
+            {
+                 alert("Invalid input. Please enter a valid number.");
+                return;
+            }
+
+            for (var i = 1; i <= number; i++) 
+            {
+                console.log(i);
+                document.write(i + '<br>'+ '<hr>')
+            }
+        }
+printCounting();
+        // by recursion
+        
+        // let a = prompt("Enter your digit....")
+        // let b = 1
+        // function counting(a)
+        // {
+        //     if(b<=a)
+        //     {
+        //         console.log(b)
+        //         document.write(b)
+        //         b++
+        //         counting(a)
+        //     }
+        // }
+        
+
+
+    </script>
+</body>
+</html>

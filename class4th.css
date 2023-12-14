@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background-image: url(pexels-pixabay-531880.jpg);
+ 
+ }
+
+ img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+ }
+
+ .top {
+    background-color: transparent;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+.herosection div{
+    width: 50%;
+}
+.herosection div img{
+    width: 100%;
+}
+.innerherosection h3{
+    color:rgb(32, 32, 142);
+    margin: 0;
+
+
+}
+.innerherosection h1{
+    color: rgb(46, 17, 188);
+    font-size: 35px;
+    margin: 0;
+}
+.innerherosection h6{
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+    gap: 20px;
+    align-items:center;
+
+}
+
+.navOption{
+    margin-right: 10px;
+    color: yellow;
+    font-size: 18px;
+    font-weight: 600;
+}
+.navOption div:hover{
+    color: rgb(76, 137, 76);
+    cursor: pointer;
+}
+.innerherosection{
+    margin-left: 10px;
+}
+
+@media screen and (max-width:750px)
+{
+ .innerherosection h6{
+    margin: 10px;
+ }
+  .innerherosection h1{
+    font-size: 20px;
+    margin: 10px;
+  }  
+  .innerherosection h3{
+    font-size: 14px;
+    margin: 10px;
+  }
+}

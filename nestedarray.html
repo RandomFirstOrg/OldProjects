@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [
+        {
+            name:"Hariom",
+            sname:"Dhakad",
+            age:"22", 
+            product:[{name:"car", type:"suv",category:"800",colour:"black"}]
+        },
+        {
+            name:"Harrie",
+            sname:"Dhakad",
+            age:"23",
+            product:[{name:"bike", type:"HF-delux",category:"cd-110",colour:"grey"}]
+        },
+        {
+            name:"Hariyom",
+            sname:"Dhakad",
+            age:"25",
+            product:[{name:"cycle", type:"atlas",category:"rt55",colour:"blue"}]
+        },
+        {
+            name:"Haiom",
+            sname:"Dhakad",
+            age:"22",
+            product:[{name:"truck",type:"ashok-leyland",category:"80",colour:"lack"}]
+        },
+        {
+            name:"Hario",
+            sname:"Dhakad",
+            age:"24",
+            product:[{name:"bus",type:"vijay-laxmi",category:"ft00",colour:"yellow"}]
+        },
+        {
+            name:"Hari",
+            sname:"Dhakad",
+            age:"26",
+            product:[{name:"jeep",  type:"thar",category:"ci80",colour:"white"}]
+        }
+        ]
+        for(let i=0; i<arr.length; i++)
+        {   
+            console.log(arr[i].name)
+            console.log(arr[i].sname)
+            console.log(arr[i].age)
+            
+            for(let j=0; j<arr[i].product.length; j++)
+            {
+                console.table(arr[i].product[j])
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <!-- <div id="unOrderList"></div>
+    <script>
+        
+        let ulist = document.getElementById("unOrderList");
+        let ul = document.createElement("ul");
+        
+        let li1 = document.createElement("li");
+        li1.innerText = "Audi";
+        let li2 = document.createElement("li");
+        li2.innerText = "Chevrolet";
+        let li3 = document.createElement("li");
+        li3.innerText = "Tata";
+         
+        ul.appendChild(li1);
+        ul.appendChild(li2);
+        ul.appendChild(li3);
+
+        ulist.appendChild(ul); -->
+        <div id="unOrderList"></div>
+        <script>
+        
+        let ulist = document.getElementById("unOrderList");
+        let table = document.createElement("table")
+        let tr = document.createElement("tr")
+        
+        td1 = document.createElement("td")
+        td2 = document.createElement("td")
+        td3 = document.createElement("td")
+
+        let ul1 = document.createElement("ul");
+        
+        let li11 = document.createElement("li");
+        li11.innerText = "Audi";
+        let li12 = document.createElement("li");
+        li12.innerText = "Chevrolet";
+        let li13 = document.createElement("li");
+        li13.innerText = "Tata";
+         
+        let ul2 = document.createElement("ul");
+        
+        let li21 = document.createElement("li");
+        li21.innerText = "Audi";
+        let li22 = document.createElement("li");
+        li22.innerText = "Chevrolet";
+        let li23 = document.createElement("li");
+        li23.innerText = "Tata";
+
+        let ul3= document.createElement("ul");
+        
+        let li31 = document.createElement("li");
+        li31.innerText = "Audi";
+        let li32 = document.createElement("li");
+        li32.innerText = "Chevrolet";
+        let li33 = document.createElement("li");
+        li33.innerText = "Tata";
+
+
+        ul1.appendChild(li11);
+        ul1.appendChild(li12);
+        ul1.appendChild(li13);
+
+        ul2.appendChild(li21);
+        ul2.appendChild(li22);
+        ul2.appendChild(li23);
+
+        ul3.appendChild(li31);
+        ul3.appendChild(li32);
+        ul3.appendChild(li33);
+
+        td1.appendChild(ul1);
+        td2.appendChild(ul2);
+        td3.appendChild(ul3);
+
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+
+        table.appendChild(tr);
+        ulist.appendChild(table);
+
+         table.setAttribute('style','border: 1px solid red;')
+    </script>  
+    
+           
+        
+      
+</body>
+</html>

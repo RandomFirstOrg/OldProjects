@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.topNav {
+    background-color: rgba(17, 0, 255, 0.205);
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* start heroSection */
+.heroSection div
+{
+    width: 50%;
+}
+.heroSection div img{
+    width: 100%;
+}
+
+.innerHeroSection h3{
+    color: rgb(129, 117, 102);
+    margin: 0;
+}
+
+.innerHeroSection h1{
+    color: rgb(121, 69, 5);
+    font-size: 35px;
+    margin: 0;
+}
+
+.innerHeroSection h6{
+    margin: 0;
+    
+}
+/* common classes */
+
+.flex {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.navOption {
+    margin-right: 10px;
+    color: darkblue;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.navOption div:hover {
+    color:rgba(0, 128, 0, 0.493);
+    cursor: pointer;
+}
+
+.innerHeroSection
+{
+    margin-left: 10px;
+}
+.navOption section
+{
+    display: none;
+}
+
+
+
+/* media query */
+
+
+@media screen and (max-width:750px) {
+    .flex
+    {
+        flex-direction: column;
+    }
+    .innerHeroSection h6
+    {
+        margin: 20px;
+    }
+    .innerHeroSection h1{
+        font-size: 22px;
+        margin: 20px;
+    }
+    .innerHeroSection h3{
+        font-size: 16px;
+        margin: 20px;
+
+    }
+    .heroSection div{
+        width: 100%;
+    }
+    .navOption div{
+        display: none;
+    } 
+    .navOption section
+    {
+        display: block;
+    }
+    .mblFlex
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .navOption:hover div{
+        display: block;
+    }
+    .navOption:hover
+    {
+        position: absolute;
+        background-color: rgba(17, 0, 255, 0.603);
+        width: 100%;
+        top:5px;
+        color: white;
+
+    }
+}
+
+
+@media screen and (max-width:400px)
+{
+    .innerHeroSection h6
+    {
+        margin: 10px;
+    }
+    .innerHeroSection h1{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .innerHeroSection h3{
+        font-size: 14px;
+        margin: 10px;
+
+    }
+ 
+}
