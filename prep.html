@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .star-rating {
+      font-size: 0;
+    }
+
+    .star-rating input {
+      display: none;
+    }
+
+    .star-rating label {
+      font-size: 24px;
+      cursor: pointer;
+      color: #ccc;
+    }
+
+    .star-rating input:checked ~ label {
+      color: #fdd835; /* Change this color for the selected star color */
+    }
+  </style>
+</head>
+<body>
+  <div class="star-rating">
+    <input type="radio" name="rating" id="star5">
+    <label for="star5">&#9733;</label>
+    <input type="radio" name="rating" id="star4">
+    <label for="star4">&#9733;</label>
+    <input type="radio" name="rating" id="star3">
+    <label for="star3">&#9733;</label>
+    <input type="radio" name="rating" id="star2">
+    <label for="star2">&#9733;</label>
+    <input type="radio" name="rating" id="star1">
+    <label for="star1">&#9733;</label>
+  </div>
+</body>
+</html>
