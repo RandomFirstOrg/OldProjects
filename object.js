@@ -1,6 +1,6 @@
-let hr = [
+let RK = [
     {
-        name : "Hariom",age : 20,sname : "Dhakad"},
+        name : "Rahul",age : 20,sname : "Dhakad"},
     {
         name : "Hariom",age : 20,sname : "Dhakad"},
     {
