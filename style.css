@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+   }
+   
+   header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+   }
+   
+   nav ul {
+    list-style-type: none;
+    padding: 0;
+   }
+   
+   nav ul li {
+    display: inline;
+    margin-right: 10px;
+   }
+   
+   nav ul li a {
+    text-decoration: none;
+    color: #000;
+   }
+   
+   section {
+    margin: 20px 0;
+   }
+   
+   section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+   }
+   
+   section img {
+    width: 100%;
+   }
+   
+   section h3 {
+    font-size: 18px;
+    margin-top: 10px;
+   }
+   
+   section p {
+    font-size: 14px;
+    margin-bottom: 10px;
+   }
+   
+   button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+   }
+   
+   footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+   }
+   
+   input[type="email"] {
+    padding: 5px;
+    margin-right: 10px;
+   }
