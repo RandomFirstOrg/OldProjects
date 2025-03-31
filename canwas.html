@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fixed Canvas Background</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  #container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  #canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+  #content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+    /* Text shadow */
+    text-shadow: 2px 2px 4px  red;
+  }
+</style>
+</head>
+<body>
+<div id="container">
+  <canvas id="canvas"></canvas>
+  <div id="content">
+    <h1>Welcome to My Page</h1>
+    <p>This is some content on the page.</p>
+    <!-- Other elements can be added here -->
+  
+  <iframe src="https://portfolio-rahul-phi.vercel.app/" 
+        width="300" 
+        frameborder="500"
+        height="300" 
+        style="border:none; overflow:hidden;" 
+        title="Project Title">
+</iframe>
+<iframe src="https://live-chat-app-sooty.vercel.app/" 
+        width="300" 
+        height="300" 
+        style="border:none; overflow:hidden;" 
+        title="Project Title">
+</iframe>
+<iframe src="https://product-react-app.vercel.app/" 
+        width="300" 
+        height="300" 
+        style="border:none; overflow:hidden;" 
+        title="Project Title">
+</iframe>
+<iframe src="https://random-404error.github.io/Random/" 
+        width="300" 
+        height="300" 
+        .responsive-iframe {
+          width: 100%;
+          height: 0;
+          padding-bottom: 56.25%; /* 16:9 aspect ratio */
+          position: relative;
+        }
+        
+        .responsive-iframe iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        
+        title="Project Title">
+</iframe>
+</div>
+
+
+</div>
+
+<script>
+  // Get the canvas element
+  var canvas = document.getElementById('canvas');
+  var ctx = canvas.getContext('2d');
+
+  // Resize canvas to match container size
+  canvas.width = canvas.offsetWidth;
+  canvas.height = canvas.offsetHeight;
+
+  // Size of each square
+  var squareSize = 20;
+
+  // Number of rows and columns
+  var rows = canvas.height / squareSize;
+  var columns = canvas.width / squareSize;
+
+  // Draw grid
+  for (var i = 0; i < rows; i++) {
+    for (var j = 0; j < columns; j++) {
+      ctx.beginPath();
+      ctx.rect(j * squareSize, i * squareSize, squareSize, squareSize);
+      ctx.fillStyle = 'white';
+      ctx.fill();
+      ctx.strokeStyle = 'black';
+      ctx.stroke();
+    }
+  }
+</script>
+</body>
+</html>

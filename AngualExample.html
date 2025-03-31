@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>AngularJS Example</title>
+  <!-- Include AngularJS library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+
+<div ng-controller="myController">
+  <h1>{{ greeting }}</h1>
+  <input type="text" ng-model="name" placeholder="Enter your name">
+  <button ng-click="sayHello()">Say Hello</button>
+</div>
+
+<script>
+  // Define AngularJS module
+  var myApp = angular.module('myApp', []);
+  
+  // Define AngularJS controller
+  myApp.controller('myController', function($scope) {
+    $scope.greeting = 'Welcome to AngularJS!';
+    
+    $scope.sayHello = function() {
+      if ($scope.name) {
+        $scope.greeting = 'Hello, ' + $scope.name + '!';
+      } else {
+        $scope.greeting = 'Hello, World!';
+      }
+    };
+  });
+</script>
+
+</body>
+</html>

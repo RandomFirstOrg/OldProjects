@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <div class="outer">
-      
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cipher Card</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="https://github.com/RandomFirstOrg/Photos/blob/main/logo_simple.png?raw=true" >
+</head>
+
+<body>
+  <div id="container">
+    <canvas id="canvas"></canvas>
+    <div id="content">
+      <div class="outer">
+
         <article class="card">
           <div class="background">
-            <img
-              src="https://github.com/RandomFirstOrg/Photos/blob/main/Cipher.jpg?raw=true"
-              alt="profile"
-            />
+            <img src="https://github.com/RandomFirstOrg/Photos/blob/main/rk-atIndiaGateCrop.jpg?raw=true" alt="profile" />
           </div>
 
           <div class="content">
@@ -43,18 +46,47 @@
               </li>
 
               <li class="chip">
-                <a href="https://www.instagram.com/rahul_choudhary.rk/"
-                  >Instagram</a
-                >
+                <a href="https://www.instagram.com/rahul_choudhary.rk/">Instagram</a>
               </li>
             </ul>
 
             <div class="action-buttons">
-              <a href="https://portfolio-rahul-phi.vercel.app/"> Explore </a>
+              <a href="https://rahul4u.vercel.app/"> Explore </a>
             </div>
           </div>
         </article>
-      
+      </div>
     </div>
-  </body>
+  </div>
+  <script>
+    // Get the canvas element
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+
+    // Resize canvas to match container size
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+
+    // Size of each square
+    var squareSize = 5;
+
+    // Number of rows and columns
+    var rows = canvas.height / squareSize;
+    var columns = canvas.width / squareSize;
+
+    // Draw grid
+    for (var i = 0; i < rows; i++) {
+      for (var j = 0; j < columns; j++) {
+        ctx.beginPath();
+        ctx.rect(j * squareSize, i * squareSize, squareSize, squareSize);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.strokeStyle = 'black';
+        ctx.stroke();
+      }
+    }
+  </script>
+</body>
+
 </html>
+
